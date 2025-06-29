@@ -125,7 +125,7 @@ We welcome contributors with backgrounds in:
 - Security / Sandbox architecture
 - Content writing for technical education
 
-> [email@example.com] — Reach out to collaborate!
+> [staff@deepnet.com.au] — Reach out to collaborate!
 
 ---
 
