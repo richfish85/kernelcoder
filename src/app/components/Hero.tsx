@@ -30,11 +30,11 @@ export default function Hero() {
   return (
     <section className="relative flex flex-col md:flex-row min-h-screen items-center justify-center p-8 gap-8">
       <div className="w-full md:w-1/2 space-y-6 text-left">
-        <div className="h-24 relative overflow-hidden">
+        <div className="min-h-[6rem] relative overflow-hidden">
           {taglines.map((line, i) => (
             <p
               key={line}
-              className={`font-mono text-3xl whitespace-nowrap absolute inset-0 flex items-center transition-opacity duration-700 ${i === index ? 'opacity-100' : 'opacity-0'}`}
+              className={`font-mono text-3xl whitespace-normal break-words absolute inset-0 flex items-center transition-opacity duration-700 ${i === index ? 'opacity-100' : 'opacity-0'}`}
             >
               {line}
             </p>
@@ -42,21 +42,24 @@ export default function Hero() {
         </div>
         <p className="text-lg font-sans">A modern playground for Bash, C, and Assembly learners.</p>
       </div>
-        <Image
-          src="/hero_right_bottom.jpeg"
-          alt="Man coding in a cafe"
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-40 rounded-2xl"
-          fill
-          sizes="80vw"
-          priority
-        />
+        <div className="absolute inset-y-0 right-0 w-1/2">
+          <Image
+            src="/hero_right_bottom.jpeg"
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover opacity-40 rounded-l-2xl"
+            fill
+            sizes="50vw"
+            priority
+          />
+        </div>
         <Image
           src="/hero_right_top.png"
           alt="Terminal sandbox"
-          className="relative z-10 shadow-xl"
+          className="relative z-10 shadow-xl w-full max-w-md md:w-auto"
           width={400}
           height={300}
+          sizes="(min-width: 768px) 400px, 80vw"
         />
         <button
           onClick={() => setShowForm(true)}
