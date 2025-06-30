@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Hero() {
   const taglines = [
@@ -41,9 +42,22 @@ export default function Hero() {
         </div>
         <p className="text-lg font-sans">A modern playground for Bash, C, and Assembly learners.</p>
       </div>
-      <div className="w-full md:w-1/2 relative flex flex-col items-center justify-center">
-        <img src="/hero_right_bottom.jpeg" alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-70 blur-sm" />
-        <img src="/hero_right_top.png" alt="Terminal sandbox example" className="relative z-10 shadow-xl" />
+        <Image
+          src="/hero_right_bottom.jpeg"
+          alt="Man coding in a cafe"
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-40 rounded-2xl"
+          fill
+          sizes="80vw"
+          priority
+        />
+        <Image
+          src="/hero_right_top.png"
+          alt="Terminal sandbox"
+          className="relative z-10 shadow-xl"
+          width={400}
+          height={300}
+        />
         <button
           onClick={() => setShowForm(true)}
           className="relative z-20 mt-4 rounded-md px-6 py-3 font-medium text-black bg-[#FDD835] hover:bg-[#e6c62f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
@@ -89,7 +103,6 @@ export default function Hero() {
             </div>
           </div>
         )}
-      </div>
     </section>
   );
 }
