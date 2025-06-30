@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function NavBar() {
   return (
@@ -40,6 +41,7 @@ export default function NavBar() {
           </li>
         </ul>
         <div className="flex items-center gap-4">
+          <DarkModeToggle />
           <Link href="#" className="hover:text-blue-500">
             Login
           </Link>
