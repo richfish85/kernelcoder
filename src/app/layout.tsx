@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
         <a href="#main" className="skip-link">Skip to content</a>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
 }
+
