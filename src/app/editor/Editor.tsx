@@ -11,14 +11,6 @@ import {
 export default function Editor() {
   return (
     <div className="flex flex-col min-h-screen">
-      <nav className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 p-4">
-        <span className="text-lg font-semibold">KernelCoder</span>
-        <select className="border rounded p-1">
-          <option>Bash</option>
-          <option>C</option>
-          <option>Assembly</option>
-        </select>
-      </nav>
       <div className="flex flex-1 overflow-hidden">
         <section className="w-full md:w-2/5 p-4 overflow-y-auto space-y-4 font-mono text-sm">
           <h2 className="text-xl font-bold">The <code>cp</code> Command</h2>

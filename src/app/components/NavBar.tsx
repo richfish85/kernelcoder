@@ -50,6 +50,13 @@ export default function NavBar() {
           <Link href="#" className="hover:text-blue-500">
             Sign Up
           </Link>
+          {/** Language Selector */}
+          {/* Make available when user is signed in, once Auth is implemented */}
+          <select className="border rounded p-1">
+            <option>Bash</option>
+            <option>C</option>
+            <option>Assembly</option>
+          </select>
         </div>
       </nav>
     </header>
