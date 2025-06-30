@@ -7,8 +7,14 @@
 
 KernelCoder is an interactive, web-based training ground for learning how computers *actually* work — from the bare metal up. Inspired by Codecademy, but purpose-built for aspiring hackers, system programmers, reverse engineers, and OS hobbyists.
 
-> **Tagline:**  
+> **Tagline:**
 > *"Learn from the bottom up. Code from the core."*
+
+## ✨ Selling Points
+
+| ✅ Hands-on from the first minute | 🧠 Learn why it works, not just what to type | 🔒 Safe command sandbox – practice without fear |
+| --- | --- | --- |
+| ⚙️ Languages covered: Bash, C, Assembly (with more coming) | 🧑‍💻 For future hackers, engineers & makers | |
 
 ---
 
