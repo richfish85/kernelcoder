@@ -1,15 +1,20 @@
 'use client';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLaptopCode,
+  faBrain,
+  faLock,
+  faCog,
+  faUserSecret,
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function SellingPoints() {
   const points = [
-    { icon: '✅', text: 'Hands-on from the first minute' },
-    { icon: '🧠', text: 'Learn why it works, not just what to type' },
-    { icon: '🔒', text: 'Safe command sandbox \u2013 practice without fear' },
-    {
-      icon: '⚙️',
-      text: 'Languages covered: Bash, C, Assembly (with more coming)',
-    },
-    { icon: '🧑\u200d💻', text: 'For future hackers, engineers & makers' },
+    { icon: faLaptopCode, text: 'Hands-on from the first minute' },
+    { icon: faBrain, text: 'Learn why it works, not just what to type' },
+    { icon: faLock, text: 'Safe command sandbox – practice without fear' },
+    { icon: faCog, text: 'Languages covered: Bash, C, Assembly (with more coming)' },
+    { icon: faUserSecret, text: 'For future hackers, engineers & makers' },
   ];
 
   return (
@@ -26,7 +31,7 @@ export default function SellingPoints() {
             key={text}
             className="flex items-start gap-3 rounded-lg bg-gray-100 p-4 shadow-sm dark:bg-gray-800"
           >
-            <span className="text-2xl" aria-hidden="true">{icon}</span>
+            <FontAwesomeIcon icon={icon} className="text-xl mt-1" aria-hidden="true" />
             <p className="font-sans leading-snug">{text}</p>
           </div>
         ))}

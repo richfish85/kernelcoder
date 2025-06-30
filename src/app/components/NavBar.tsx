@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import DarkModeToggle from './DarkModeToggle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   return (
@@ -20,13 +22,13 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="rounded-md bg-blue-500 px-3 py-1.5 text-white hover:bg-blue-600">
+            <Link href="/editor" className="rounded-md bg-blue-500 px-3 py-1.5 text-white hover:bg-blue-600">
               Try Demo
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-blue-500">
-              Subjects <span aria-hidden="true">▼</span>
+            <Link href="#" className="hover:text-blue-500 flex items-center gap-1">
+              Subjects <FontAwesomeIcon icon={faAngleDown} aria-hidden="true" />
             </Link>
           </li>
           <li>
