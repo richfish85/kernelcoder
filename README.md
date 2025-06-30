@@ -1,11 +1,11 @@
-# 🔧 LowLevelAcademy  
-*A next-gen interactive learning platform for low-level programming and systems fundamentals.*
+# 🔧 KernelCoder
+*A next-gen interactive learning platform for low-level programming and systems fundamentals. Part of the cybersecurity skill building module by DeepNet*
 
 ---
 
 ## 🧠 Overview
 
-LowLevelAcademy is an interactive, web-based training ground for learning how computers *actually* work — from the bare metal up. Inspired by Codecademy, but purpose-built for aspiring hackers, system programmers, reverse engineers, and OS hobbyists.
+KernelCoder is an interactive, web-based training ground for learning how computers *actually* work — from the bare metal up. Inspired by Codecademy, but purpose-built for aspiring hackers, system programmers, reverse engineers, and OS hobbyists.
 
 > **Tagline:**  
 > *"Learn from the bottom up. Code from the core."*
