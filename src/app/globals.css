@@ -46,6 +46,11 @@ html.dark {
   --foreground: #ededed;
 }
 
+html.light {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
