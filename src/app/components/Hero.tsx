@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="w-full md:w-1/2 space-y-6 text-left z-10">
         <h1
           key={index}
-          className="text-4xl font-mono text-white transition-opacity duration-500 ease-in-out opacity-100"
+          className="text-4xl font-mono text-gray-900 dark:text-white transition-opacity duration-500 ease-in-out opacity-100"
         >
           {taglines[index]}
         </h1>

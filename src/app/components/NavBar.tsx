@@ -5,7 +5,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   return (
-    <header className="border-b border-gray-200">
+    <header className="border-b border-gray-200 dark:border-gray-700">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4" aria-label="Main navigation">
         <Link href="/" className="text-lg font-semibold hover:text-blue-500">
           KernelCoder
